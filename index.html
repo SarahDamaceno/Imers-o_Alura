@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Imersão</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/vars.css">
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+    <link rel="stylesheet" href="./src/styles/main-content.css">
     <!--Importando CDN para usar ícone externo-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
@@ -16,7 +18,7 @@
         <nav class="sidebar_navigation"> <!--Usada para fazer menus-->
            <div class="logo">
               <a href="">
-                <img src="./assets/logo-spotify.png" alt="Logo do Spotify">
+                <img src="./src/assets/logo-spotify.png" alt="Logo do Spotify">
               </a>
               </div>
                 <ul>
@@ -65,9 +67,40 @@
                 <span>Português do Brasil</span>
               </button>
             </div>
+        </div>  
+  </div>
+
+  <main> <!--Conteúdo principal-->
+     <div class="main-container">
+        <nav class="header-navigation">
+          <div class="navigation">
+            <button class="arrow-left">
+              <img src="./src/assets/small-left.png" alt="Seta esquerda">
+            </button>
+
+            <button class="arrow-right">
+              <img src="./src/assets/small-right.png" alt="Seta direita">
+            </button>
 
             </div>
-            
-         </div>
+
+            <div class="header-search">
+              <img src="./src/assets/search.png" alt="">
+              <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?">
+            </div>
+
+            <div class="header-login">
+
+              <button class="subscribe">Inscreva-se</button>
+              <button class="login">Entrar</button>
+
+            </div>
+            </nav>
+          </div>
+      
+     </div>
+  </main>
+
+  <footer class="disclaimer-premium"></footer>
 </body>
 </html>
